@@ -1,0 +1,6 @@
+<beans>
+	<bean id="userDao"  class="com.ekunt.dao.impl.UserDaoImpl" />
+	<bean id="userService"  class="com.ekunt.service.UserService" >
+		<property name="dao"  ref="userDao"/>
+	</bean>
+</beans>
